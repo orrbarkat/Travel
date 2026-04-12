@@ -51,6 +51,3 @@ License: MIT (orrbarkat)
 - For complex problems, parallelize with multiple subagents
 
 ## Lessons Learned
-
-<!-- Add entries here when Claude makes mistakes. Format: -->
-<!-- - YYYY-MM-DD: Description of mistake and the rule to prevent it -->
