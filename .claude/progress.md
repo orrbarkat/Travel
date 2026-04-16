@@ -283,5 +283,5 @@ python load_data.py
 - Use `executemany` for bulk inserts (no pandas needed)
 - `hash()` is NOT deterministic across Python sessions — use `sum(ord(c) for c in s) % N` or random-based approach for flight numbers
 - Read schema.sql with `Path("schema.sql").read_text()` and execute it
-- Delete old DB file before creating new one: `Path(db_path).unlink(missing_ok=True)`
+- Move (don't delete) old DB before creating new one: rename to `flights.duckdb.bak`, only delete backup after successful verify_data()
 - AIRCRAFT_TYPES: narrowbody (B737, B738, A320, A321, A319) for <300min, widebody (B787, A330, B777, A350) for longer
